@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Fire — NE quadrant -->
+  <path d="M150,150 L150,12 A138,138,0,0,1,288,150 Z" fill="#ef4444"/>
+  <!-- Water — SE quadrant -->
+  <path d="M150,150 L288,150 A138,138,0,0,1,150,288 Z" fill="#3b82f6"/>
+  <!-- Earth — SW quadrant -->
+  <path d="M150,150 L150,288 A138,138,0,0,1,12,150 Z" fill="#65a30d"/>
+  <!-- Air — NW quadrant -->
+  <path d="M150,150 L12,150 A138,138,0,0,1,150,12 Z" fill="#38bdf8"/>
+
+  <!-- Outer ring -->
+  <circle cx="150" cy="150" r="138" fill="none" stroke="#1c3a1c" stroke-width="5"/>
+
+  <!-- Element symbol: Fire — flame (NE) -->
+  <path d="M224,70 C220,78 214,84 217,92 C219,97 224,100 224,105 C224,100 229,97 231,92 C234,84 228,78 224,70 Z" fill="white" opacity="0.9"/>
+  <ellipse cx="224" cy="107" rx="7" ry="4" fill="white" opacity="0.7"/>
+
+  <!-- Element symbol: Water — drop (SE) -->
+  <path d="M224,200 C224,200 212,216 212,224 A12,12,0,0,0,236,224 C236,216 224,200 224,200 Z" fill="white" opacity="0.9"/>
+
+  <!-- Element symbol: Earth — leaf (SW) -->
+  <path d="M76,200 C76,200 62,208 64,220 C66,232 80,234 84,224 C88,214 82,204 76,200 Z" fill="white" opacity="0.9"/>
+  <line x1="76" y1="200" x2="74" y2="228" stroke="white" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Element symbol: Air — spiral (NW) -->
+  <path d="M76,80 C76,74 82,68 90,72 C98,76 98,86 90,90 C82,94 72,88 72,78 C72,66 84,58 96,64" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- White center circle -->
+  <circle cx="150" cy="150" r="82" fill="white"/>
+
+  <!-- Scout fleur-de-lis -->
+  <!-- Top/center petal -->
+  <path d="M150,82
+           C133,82 120,100 124,118
+           C127,132 140,142 143,157
+           L157,157
+           C160,142 173,132 176,118
+           C180,100 167,82 150,82 Z"
+        fill="#2d5a1f"/>
+  <!-- Left petal -->
+  <path d="M143,157
+           C139,148 127,143 113,148
+           C96,155 90,172 102,180
+           C110,185 123,181 131,173
+           C137,167 141,162 143,157 Z"
+        fill="#2d5a1f"/>
+  <!-- Right petal -->
+  <path d="M157,157
+           C161,148 173,143 187,148
+           C204,155 210,172 198,180
+           C190,185 177,181 169,173
+           C163,167 159,162 157,157 Z"
+        fill="#2d5a1f"/>
+  <!-- Stem -->
+  <rect x="143" y="157" width="14" height="48" rx="3" fill="#2d5a1f"/>
+  <!-- Cross band -->
+  <rect x="118" y="183" width="64" height="11" rx="5" fill="#2d5a1f"/>
+  <!-- Bottom foot -->
+  <path d="M143,205 L157,205 L154,220 C153,223 147,223 146,220 Z" fill="#2d5a1f"/>
+
+  <!-- Subtle dividing cross inside white circle only -->
+  <line x1="150" y1="68" x2="150" y2="82"  stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="150" y1="218" x2="150" y2="232" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="68"  y1="150" x2="82"  y2="150" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="218" y1="150" x2="232" y2="150" stroke="#e5e7eb" stroke-width="1"/>
+</svg>
