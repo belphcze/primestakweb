@@ -24,8 +24,8 @@ export default async function HomePage() {
     // Content not yet published — show placeholder layout
   }
 
-  const logoUrl = homepage?.elements.logo.value[0]?.url ?? null
-  const campName = settings?.elements.camp_name.value || 'Skautský tábor 2026'
+  const logoUrl = homepage?.elements.logo.value[0]?.url ?? 'https://assets-eu-01.kc-usercontent.com/291ee9b8-9796-0118-6eff-e347bea0e0c7/8e3b85ba-a8a0-410f-aaae-a3208ad55ccb/SKAUT_znak.png'
+  const campName = settings?.elements.camp_name.value || 'Primestak26'
   const campDates = settings?.elements.camp_dates.value || '20. – 24. července 2026'
   const campMotto = settings?.elements.camp_motto.value
   const contactEmail = settings?.elements.contact_email.value
@@ -36,11 +36,7 @@ export default async function HomePage() {
       <section className="bg-forest text-white py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex justify-center mb-8">
-            {logoUrl ? (
-              <Image src={logoUrl} alt="Logo tábora" width={180} height={180} className="rounded-full" unoptimized/>
-            ) : (
-              <Image src="/logo.svg" alt="Logo tábora" width={180} height={180}/>
-            )}
+            <Image src={logoUrl} alt="Logo tábora" width={160} height={160} className="object-contain drop-shadow-lg" unoptimized/>
           </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold mb-3">
             {homepage?.elements.hero_title.value || campName}
