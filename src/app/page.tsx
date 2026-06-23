@@ -1,6 +1,7 @@
 import { deliveryClient } from '@/lib/kontent'
 import type { Homepage, SiteSettings } from '@/lib/types'
 import Image from 'next/image'
+import { RevealContact } from '@/components/RevealContact'
 
 const elements = [
   { label: 'Oheň',   color: 'bg-fire',  icon: '🔥' },
@@ -67,9 +68,7 @@ export default async function HomePage() {
           {contactEmail && (
             <div>
               <div className="text-xs uppercase tracking-widest text-stone-400 mb-1">Kontakt</div>
-              <a href={`mailto:${contactEmail}`} className="font-semibold text-forest text-lg hover:underline">
-                {contactEmail}
-              </a>
+              <RevealContact value={contactEmail} type="email" className="font-semibold text-forest text-lg hover:underline" />
             </div>
           )}
         </div>
